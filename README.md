@@ -5,5 +5,6 @@ Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux
   <h4>What's Tested & Confirmed Working</h4>
   <ul>
     <li>Downloading of files (despite a couple 302 redirects)</li>
+    <li>Extracting of files (with a few caveats regarding full path results (see issues)</li>
   </ul>
 </p>
