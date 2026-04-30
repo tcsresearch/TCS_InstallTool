@@ -2,8 +2,8 @@
 
 ################################################################################################################
 # Define Varaibles - Version #
-InstallerVersion="0.1.1"
-LastModifiedDate="04/29/2026"
+InstallerVersion="0.1.2"
+LastModifiedDate="04/30/2026"
 
 ################################################################################################################
 # Define Variables - Downloaders #
@@ -51,6 +51,8 @@ FileName="main.zip"
 ##################################################################################################################
 # Define Variables - Install Folders #
 
+TCS_InstallTool_install_Dir="$(pwd)"
+
 tmux_install_Dir="/etc"
 
 tmux_plugins_install_Dir="/etc/tmux/tpm"
@@ -83,6 +85,15 @@ function DisplayLine() {
 }
 
 ##### Download Files #####
+# TODO: Implement Git functionality for easy updates.
+
+
+function SelfUpdate() {
+echo "Updating TCS_InstallTool..."
+	# TODO: Backup before upgrading.
+	"$downloader_app $downloader_args" -O TCS_InstallTool-v2.sh "https://raw.githubusercontent.com/tcsresearch/TCS_InstallTool/refs/heads/main/TCS_InstallTool-v2.sh"
+}
+	
 
 function DynamicDownloader() {
 	# TODO: Finish implementation 
@@ -91,7 +102,27 @@ function DynamicDownloader() {
 
 function ManualDownloader() {
 	# TODO: Set destination filenames! 
-         echo "Downloading tmux-configs..."
+    
+	# TODO: Add Additional Apps / Sort By Category 
+	
+	 #		 	*** WebApp Utils *** 		#
+	 #			 SEOPanel-UpgradeTool / CronicleInstallTool
+	 
+	 #		 	*** Kernel Utils *** 		#
+	 #			KMirrorTool / Kernel-RepoStatus
+
+	 #		 	*** Misc Utils *** 		#
+     #			BootConfigTool / PHPInfoMenu
+
+	 #		 	*** Repo Utils *** 		#
+	 #			RepoSync-ng / MirrrorMan 
+
+	 #		 	*** Other Utils *** 		#
+	 #			TarMonster-beta / AOSPMirrorTool 
+
+	 ########################################################################################################################
+	 
+	 echo "Downloading tmux-configs..."
  	 "$downloader_app $downloader_args" -O tmux-configs.zip "$BaseURL/tmux-configs/$ExtURL/$FileName"
  
 	 echo "Downloading tmux-custom-plugins..."
