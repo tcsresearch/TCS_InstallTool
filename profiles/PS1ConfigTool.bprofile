@@ -1,0 +1,3 @@
+# PS1ConfigTool #
+  PS1ConfigTool_install_URL="https://github.com/tcsresearch/PS1ConfigTool/archive/refs/heads/main.zip"
+  PS1ConfigTool_install_Dir="/etc/PS1ConfigTool"
