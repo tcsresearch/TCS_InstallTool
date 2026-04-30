@@ -1,0 +1,20 @@
+# TODO: Implement Git functionality for easy updates.
+
+function GitCloneAll_PublicOnly() {
+	curl -s https://github.com | grep -o 'git@[^"]*' | xargs -L1 git clone
+}
+
+function GitCloneAll_PublicPrivate() {
+	curl -H "Authorization: token YOUR_GITHUB_TOKEN" -s https://github.com | grep -o 'git@[^"]*' | xargs -L1 git clone
+}
+
+
+function gh-cli_Auth() {
+# TODO: Add sanity check for gh package
+	gh auth login
+}
+
+function gh-cli_CloneAll() {
+# TODO: Add sanity check for gh package
+	gh repo list YOUR_USERNAME --limit 1000 --json url --jq '.[].url' | xargs -L1 git clone
+}
