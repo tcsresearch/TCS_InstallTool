@@ -19,6 +19,12 @@ extractor_app="unzip"
 extractor_args=" "
 
 ################################################################################################################
+# Define Variables - Dynamic Downloader / Extractor #
+ProjectName="$1"
+ZipFile="$2"
+InstallFolder="$3"
+
+################################################################################################################
 # Define Variables - Full URLs #
 
 # SelfUpdate #
@@ -133,8 +139,11 @@ echo "Updating TCS_InstallTool..."
 
 function DynamicDownloader() {
 	# TODO: Finish implementation 
-	"$downloader_app" "$downloader_args" "$BaseURL/$1/$ExtURL/$FileName"
+	echo "Downloading $ProjectName..."
+	"$downloader_app" "$downloader_args" "$BaseURL/$ProjectName/$ExtURL/$FileName"
 }
+
+
 
 function ManualDownloader() {
 	# TODO: Set destination filenames! 
@@ -197,6 +206,12 @@ function ManualDownloader() {
 
 
 ##### Extract Files #####
+
+function DynamicExtrator() {
+	echo "Extracting & Installing $ProjectName..."
+	"$extractor_app $extractor_args" $ProjectName.zip -d "$InstallFolder" 
+}
+
 
 function ExtractFiles() {
 	# TODO: Switch to array with for loop
