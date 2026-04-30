@@ -1,0 +1,11 @@
+function ConfigureInstall() {
+	echo "Not Implemented Yet."
+	echo "When done, this function will do the following: "
+	echo " 	- Add BLING to PATH"
+	echo "  - Enable Cecho incl. alias"
+	echo "  - Add tmux, ColorEcho, BRCD, and PS1ConfigTool to .bash_profile"
+}
+
+function InstallCompletedMsg() {
+	echo "Install Completed."
+}
