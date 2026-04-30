@@ -21,6 +21,9 @@ extractor_args=" "
 ################################################################################################################
 # Define Variables - Full URLs #
 
+# SelfUpdate #
+SelfUpdate_URL="https://raw.githubusercontent.com/tcsresearch/TCS_InstallTool/refs/heads/main/TCS_InstallTool-v2.sh"
+
 # tmux #
 tmux_install_URL="https://github.com/tcsresearch/tmux-configs/archive/refs/heads/main.zip"
 
@@ -51,19 +54,28 @@ FileName="main.zip"
 ##################################################################################################################
 # Define Variables - Install Folders #
 
-TCS_InstallTool_install_Dir="$(pwd)"
+# SelfUpdate #
+	TCS_InstallTool_install_Dir="$(pwd)"
 
-tmux_install_Dir="/etc"
+# Tmux #
+	tmux_install_Dir="/etc"
 
-tmux_plugins_install_Dir="/etc/tmux/tpm"
+	tmux_plugins_install_Dir="/etc/tmux/tpm"
 
-BLING_install_Dir="etc/BLING"
+# Coree Utils #
+	BLING_install_Dir="etc/BLING"
 
-BRCD_install_Dir="/etc/bashrc.d"
+	BRCD_install_Dir="/etc/bashrc.d"
 
-PS1ConfigTool_install_Dir="/etc/PS1ConfigTool"
+	PS1ConfigTool_install_Dir="/etc/PS1ConfigTool"
 
-ColorEcho_install_Dir="/etc/ColorEcho"
+	ColorEcho_install_Dir="/etc/ColorEcho"
+
+# Repo Utils #
+	RepoSync_install_Dir="/etc/RepoSync-ng"
+
+	MirrorMan_install_Dir="/etc/MirrorMan"
+
 
 #####################################################################################################################
 #####################################################################################################################
@@ -132,20 +144,23 @@ function ManualDownloader() {
 	 #		 	*** Misc Utils *** 		#
      #			BootConfigTool / PHPInfoMenu
 
-	 #		 	*** Repo Utils *** 		#
+	 #		 	*** Repo Utils *** 		# DONE
 	 #			RepoSync-ng / MirrrorMan 
 
 	 #		 	*** Other Utils *** 		#
 	 #			TarMonster-beta / AOSPMirrorTool 
 
 	 ########################################################################################################################
-	 
+
+	 ## Tmux ##
 	 echo "Downloading tmux-configs..."
  	 "$downloader_app $downloader_args" -O tmux-configs.zip "$BaseURL/tmux-configs/$ExtURL/$FileName"
  
 	 echo "Downloading tmux-custom-plugins..."
  	 "$downloader_app $downloader_args" -O tmux-custom-plugins.zip "$BaseURL/tmux-custom-plugins/$ExtURL/$FileName"
 
+
+	## Core Utils ##
 	 echo "Downloading BLING..."
 	 "$downloader_app $downloader_args" -O BLING.zip "$BaseURL/BLING/$ExtURL/$FileName"
  
@@ -157,17 +172,31 @@ function ManualDownloader() {
 
 	 echo "Downloading ColorEcho..."
 	 "$downloader_app $downloader_args" -O ColorEcho.zip "$BaseURL/ColorEcho/$ExtURL/$FileName"
+
+	## Repo Utils ##
+	echo "Downloading RepoSync-ng..."
+	"$downloader_app $downloader_args" -O RepoSync-ng.zip "$BaseURL/RepoSync-ng/$ExtURL/$FileName"
+
+
+
+
 }
+
+
 
 
 ##### Extract Files #####
 
 function ExtractFiles() {
 	# TODO: Switch to array with for loop
+
+	## Tmux ##
 	echo "Extracting & Installing tmux-configs..."
 	"$extractor_app $extractor_args" tmux-configs.zip -d "$tmux_install_Dir"
 	echo "Extracting & Installing tmux-custom-plugins..."
 	"$extractor_app $extractor_args" tmux-custom-plugins.zip -d "$tmux_install_Dir/tpm"
+	
+	## Core Utils ##
 	echo "Extracting & Installing BLING..."
 	"$extractor_app $extractor_args" BLING.zip -d "$BLING_install_Dir"
 	echo "Extracting & Installing BRCD..."
@@ -176,6 +205,13 @@ function ExtractFiles() {
 	"$extractor_app $extractor_args" PS1ConfigTool.zip -d "$PS1ConfigTool_install_Dir"
  	echo "Extracting & Installing ColorEcho..."
 	"$extractor_app $extractor_args" ColorEcho.zip -d "$ColorEcho_install_Dir"
+
+  ## Repo Utils ##
+	echo "Extracting & Installing RepoSync-ng..."
+	"$extractor_app $extractor_args" RepoSync-ng.zip -d "$RepoSync_install_Dir"
+
+	echo "Extracting & Installing MirrorMan..."
+	"$extractor_app $extractor_args" MirrorMan.zip -d "$MirrorMan_install_Dir"
 }
 
 function ConfigureInstall() {
@@ -200,6 +236,11 @@ function InstallCompletedMsg() {
  DisplayLine # Separator for troubleshooting and easier status reads
  ConfigureInstall
  InstallCompletedMsg
+
+### Git Stuff ##
+# gh-cli_Auth
+# gh-cli_CloneAll
+
 # GitCloneAll_PublicOnly # Only works on public repos!
 # GitCloneAll_PublicPrivate
 
