@@ -2,7 +2,7 @@
 
 ################################################################################################################
 # Define Varaibles - Version #
-InstallerVersion="0.1.2"
+InstallerVersion="0.2.0"
 LastModifiedDate="04/30/2026"
 
 ################################################################################################################
@@ -87,6 +87,24 @@ function DisplayLine() {
 ##### Download Files #####
 # TODO: Implement Git functionality for easy updates.
 
+function GitCloneAll_PublicOnly() {
+	curl -s https://github.com | grep -o 'git@[^"]*' | xargs -L1 git clone
+}
+
+function GitCloneAll_PublicPrivate() {
+	curl -H "Authorization: token YOUR_GITHUB_TOKEN" -s https://github.com | grep -o 'git@[^"]*' | xargs -L1 git clone
+}
+
+
+function gh-cli_Auth() {
+# TODO: Add sanity check for gh package
+	gh auth login
+}
+
+function gh-cli_CloneAll() {
+# TODO: Add sanity check for gh package
+	gh repo list YOUR_USERNAME --limit 1000 --json url --jq '.[].url' | xargs -L1 git clone
+}
 
 function SelfUpdate() {
 echo "Updating TCS_InstallTool..."
@@ -182,3 +200,6 @@ function InstallCompletedMsg() {
  DisplayLine # Separator for troubleshooting and easier status reads
  ConfigureInstall
  InstallCompletedMsg
+# GitCloneAll_PublicOnly # Only works on public repos!
+# GitCloneAll_PublicPrivate
+
