@@ -1,0 +1,3 @@
+# BRCD #
+  BRCD_install_URL="https://github.com/tcsresearch/BRCD/archive/refs/heads/main.zip"
+  BRCD_install_Dir="/etc/bashrc.d"
