@@ -1,0 +1,3 @@
+# SelfUpdate #
+  SelfUpdate_URL="https://raw.githubusercontent.com/tcsresearch/TCS_InstallTool/refs/heads/main/TCS_InstallTool-v2.sh"
+  TCS_InstallTool_install_Dir="$(pwd)"
