@@ -86,7 +86,7 @@ function DisplayLine() {
 
 function DynamicDownloader() {
 	# TODO: Finish implementation 
-	$downloader_app $downloader_args $BaseURL/$1/$ExtURL/$FileName
+	"$downloader_app" "$downloader_args" "$BaseURL/$1/$ExtURL/$FileName"
 }
 
 function ManualDownloader() {
@@ -116,17 +116,17 @@ function ManualDownloader() {
 function ExtractFiles() {
 	# TODO: Switch to array with for loop
 	echo "Extracting & Installing tmux-configs..."
-	$extractor_app $extractor_args tmux-configs.zip -d $tmux_install_Dir
+	$extractor_app $extractor_args tmux-configs.zip -d "$tmux_install_Dir"
 	echo "Extracting & Installing tmux-custom-plugins..."
-	$extractor_app $extractor_args tmux-custom-plugins.zip -d $tmux_install_Dir/tpm
+	$extractor_app $extractor_args tmux-custom-plugins.zip -d "$tmux_install_Dir/tpm"
 	echo "Extracting & Installing BLING..."
-	$extractor_app $extractor_args BLING.zip -d $BLING_install_Dir
+	$extractor_app $extractor_args BLING.zip -d "$BLING_install_Dir"
 	echo "Extracting & Installing BRCD..."
-	$extractor_app $extractor_args BRCD.zip -d $BRCD_install_Dir
+	$extractor_app $extractor_args BRCD.zip -d "$BRCD_install_Dir"
 	echo "Extracting & Installing PS1ConfigTool..."
-	$extractor_app $extractor_args PS1ConfigTool.zip -d $PS1ConfigTool_install_Dir
+	$extractor_app $extractor_args PS1ConfigTool.zip -d "$PS1ConfigTool_install_Dir"
  	echo "Extracting & Installing ColorEcho..."
-	$extractor_app $extractor_args ColorEcho.zip -d $ColorEcho_install_Dir
+	$extractor_app $extractor_args ColorEcho.zip -d "$ColorEcho_install_Dir"
 }
 
 function ConfigureInstall() {
