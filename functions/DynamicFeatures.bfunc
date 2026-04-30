@@ -1,0 +1,10 @@
+function DynamicDownloader() {
+	# TODO: Finish implementation 
+	echo "Downloading $ProjectName..."
+	"$downloader_app" "$downloader_args" "$BaseURL/$ProjectName/$ExtURL/$FileName"
+}
+
+function DynamicExtrator() {
+	echo "Extracting & Installing $ProjectName..."
+	"$extractor_app $extractor_args" $ProjectName.zip -d "$InstallFolder" 
+}
