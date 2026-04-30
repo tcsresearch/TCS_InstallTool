@@ -1,0 +1,41 @@
+function DisplayBanner() {
+	echo "TCS Research Install Tool - Version $InstallerVersion ($LastModifiedDate)"
+	echo " "
+}
+
+
+function DisplayLine() {
+	echo " "
+	echo "--------------------------------------------------------"
+	echo " "
+}
+
+function parse_config() {
+    # local config_file="$1"
+    local config_file="../conf/TCS_InstallTool.conf"
+    
+    # Check if the file exists
+    if [[ ! -f "$config_file" ]]; then
+        echo "Error: Configuration file '$config_file' not found."
+        return 1
+    fi
+
+    # Read the file line by line
+    while IFS='=' read -r key value; do
+        # 1. Trim whitespace from key and value
+        # 2. Skip empty lines or lines starting with '#'
+        key=$(echo "$key" | xargs)
+        value=$(echo "$value" | xargs)
+
+        if [[ -n "$key" && ! "$key" =~ ^# ]]; then
+            echo "Key: $key | Value: $value"
+        fi
+    done < "$config_file"
+}
+
+# Usage:
+# parse_config "settings.conf"
+
+function ShowConfig() {
+  parse_config "../conf/TCS_InstallTool.conf"
+}
