@@ -62,7 +62,7 @@ FileName="main.zip"
 
 	tmux_plugins_install_Dir="/etc/tmux/tpm"
 
-# Coree Utils #
+# Core Utils #
 	BLING_install_Dir="etc/BLING"
 
 	BRCD_install_Dir="/etc/bashrc.d"
@@ -75,6 +75,12 @@ FileName="main.zip"
 	RepoSync_install_Dir="/etc/RepoSync-ng"
 
 	MirrorMan_install_Dir="/etc/MirrorMan"
+
+# Other Utils #
+	TarMonster_install_Dir="/etc/TarMonster"
+
+	AOSPMirrorTool_install_Dir="/etc/AOSPMirrorTool"
+
 
 
 #####################################################################################################################
@@ -144,10 +150,10 @@ function ManualDownloader() {
 	 #		 	*** Misc Utils *** 		#
      #			BootConfigTool / PHPInfoMenu
 
-	 #		 	*** Repo Utils *** 		# DONE
+	 #		 	*** Repo Utils *** 			# DONE / NEEDS TESTING !
 	 #			RepoSync-ng / MirrrorMan 
 
-	 #		 	*** Other Utils *** 		#
+	 #		 	*** Other Utils *** 		# DONE / NEEDS TESTING !
 	 #			TarMonster-beta / AOSPMirrorTool 
 
 	 ########################################################################################################################
@@ -177,7 +183,12 @@ function ManualDownloader() {
 	echo "Downloading RepoSync-ng..."
 	"$downloader_app $downloader_args" -O RepoSync-ng.zip "$BaseURL/RepoSync-ng/$ExtURL/$FileName"
 
+    ## Other Utils ##
+	echo "Downloading TarMonster-beta..."
+	"$downloader_app $downloader_args" -O TarMonster-beta.zip "$BaseURL/TarMonster-beta/$ExtURL/$FileName"
 
+	echo "Downloading AOSPMirrorTool..."
+	"$downloader_app $downloader_args" -O AOSPMirrorTool.zip "$BaseURL/AOSPMirrorTool/$ExtURL/$FileName"
 
 
 }
@@ -212,6 +223,15 @@ function ExtractFiles() {
 
 	echo "Extracting & Installing MirrorMan..."
 	"$extractor_app $extractor_args" MirrorMan.zip -d "$MirrorMan_install_Dir"
+
+ ## Other Utils ##
+	echo "Extracting & Installing TarMonster-beta..."
+	"$extractor_app $extractor_args" TarMonster-beta.zip -d "$TarMonster_install_Dir"
+
+	echo "Extracting & Installing AOSPMirrorTool..."
+	"$extractor_app $extractor_args" AOSPMirrorTool.zip -d "$AOSPMirrorTool_install_Dir"
+
+
 }
 
 function ConfigureInstall() {
