@@ -2,22 +2,25 @@
 # TODO: Add Sourcing and Sanity Checks.
 
 ##### Define Config File / Function Library Location #
+ConfigDir="./config"
+FunctionsDir="./functions"
+
 ConfigFile="TCS_InstallTool.conf"
 FunctionsFile="TCS_InstallTool.bfunc"
 
 # Sanity Check: Config File Exists?
-if [ -f $ConfigFile ]; then
+if [ -f "$ConfigDir"/"$ConfigFile" ]; then
   echo "Sourcing Config File..."
-  source "$ConfigFile"
+  source "$ConfigDir"/"$ConfigFile"
 else
   echo "ERROR! Config File Not Found.  Quitting..."
   return
 fi
 
 # Sanity Check: Library File Exists?
-if [ -f $FunctionsFile ]; then
+if [ -f "$FunctionsDir"/"$FunctionsFile" ]; then
   echo "Sourcing Functions File..."
-  source "$FunctionsFile"
+  source "$FunctionsDir"/"$FunctionsFile"
 else
   echo "ERROR! Functions File Not Found.  Quitting..."
   return
