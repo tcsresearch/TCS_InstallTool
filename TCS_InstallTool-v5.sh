@@ -9,11 +9,13 @@
 AdvPreLoader_Dir="$(pwd)"
 AdvPreLoader_File="AdvPreLoader.sh"
 
-##### Define Config File / Function Library Location #####
+##### Define Config File Location #####
 ConfigDir="./config"
-FunctionsDir="./functions"
-
 ConfigFile="TCS_InstallTool.conf"
+
+
+##### Define Function Library Location #####
+FunctionsDir="./functions"
 FunctionsFile="TCS_InstallTool.bfunc"
 
 ############################################################################################################################
