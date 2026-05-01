@@ -1,3 +1,13 @@
 # BRCD #
+
+ProfileName="BRCD"
+
+# Download URL #
   BRCD_install_URL="https://github.com/tcsresearch/BRCD/archive/refs/heads/main.zip"
-  BRCD_install_Dir="/etc/bashrc.d"
+
+# Installer Dirs #
+BRCD_install_Dir_Root="/etc/bashrc.d"
+BRCD_install_Dir_NonRoot="~/bashrc.d"
+
+# Dynamic Installer #
+BRCD_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
