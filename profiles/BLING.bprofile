@@ -1,3 +1,4 @@
 # BLING #
   BLING_install_URL="https://github.com/tcsresearch/BLING/archive/refs/heads/main.zip"
-  BLING_install_Dir="etc/BLING"
+  BLING_install_Dir_Root="etc/BLING"
+  BLING_install_Dir_NonRoot="~/TCS_IT/BLING" # Using TCS_IT as shorthand for "TCS_InstallTool".
