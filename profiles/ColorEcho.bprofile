@@ -1,3 +1,12 @@
 # ColorEcho #
-  ColorEcho_install_URL="https://github.com/tcsresearch/ColorEcho/archive/refs/heads/main.zip"
-  ColorEcho_install_Dir="/etc/ColorEcho"
+ProfileName="ColorEcho"
+
+# Download URL #
+  ColorEcho_Download_URL="https://github.com/tcsresearch/ColorEcho/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  ColorEcho_install_Dir_Root="/etc/ColorEcho"
+  ColorEcho_install_Dir_NonRoot="~/ColorEcho"
+
+# Dynamic Installer #
+  ColorEcho_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
