@@ -8,5 +8,5 @@
   BLING_install_Dir_Root="etc/BLING"
   BLING_install_Dir_NonRoot="~/TCS_IT/BLING"
 
-# Dynamic Variable For Final Version #
+# Dynamic Installer #
   BLING_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
