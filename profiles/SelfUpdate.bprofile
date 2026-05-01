@@ -1,3 +1,12 @@
 # SelfUpdate #
+ProfileName="SelfUpdate"
+
+# Download URL #
   SelfUpdate_URL="https://raw.githubusercontent.com/tcsresearch/TCS_InstallTool/refs/heads/main/TCS_InstallTool-v2.sh"
-  TCS_InstallTool_install_Dir="$(pwd)"
+
+# Install Dirs #
+TCS_InstallTool_install_Dir_Root="/etc/TCS_IT"
+TCS_InstallTool_install_Dir_NonRoot="~/TCS_IT"
+
+# Dynamic Installer #
+TCS_InstallTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
