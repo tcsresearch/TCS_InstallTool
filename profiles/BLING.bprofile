@@ -1,8 +1,8 @@
 # BLING #
   ProfileName="BLING"
 
-# Downloader URL #
-  BLING_download_URL="https://github.com/tcsresearch/BLING/archive/refs/heads/main.zip"
+# Download URL #
+  BLING_Download_URL="https://github.com/tcsresearch/BLING/archive/refs/heads/main.zip"
 
 # Install Dirs #
   BLING_install_Dir_Root="etc/BLING"
