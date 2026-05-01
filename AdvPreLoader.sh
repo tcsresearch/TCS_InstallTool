@@ -14,10 +14,10 @@ CONFIG_DIR="$(pwd)/config"
 
 # CONFIG_FILE="test.ini"
 #  CONFIG_FILE="config.ini"
-  CONFIG_FILE="RepoSync-ng.conf"
+#  CONFIG_FILE="RepoSync-ng.conf"
 
 FUNC_DIR="$(pwd)/functions"
-FUNC_FILE="lib_ini.bfunc"
+# FUNC_FILE="lib_ini.bfunc"
 
 # Colors for Cecho-like output
 COLORS_FILE="Colors.conf"
