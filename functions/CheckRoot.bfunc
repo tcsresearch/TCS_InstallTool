@@ -1,3 +1,10 @@
+This function will call either CheckRoot_UID or CheckRoot_EUID, depending on your needs and/or confiuration options.
+# TODO: Add CheckRoot_Method Config Option.
+
+function CheckRoot() {
+  CheckRoot_EUID
+}
+
 function CheckRoot_UID() {
   # Check if the User ID (UID) is not 0 (root)
   if [ "$UID" -ne 0 ]; then
