@@ -1,12 +1,34 @@
 #!/usr/bin/env bash
 # TODO: Add Sourcing and Sanity Checks.
 
-##### Define Config File / Function Library Location #
+#########################################################################################################################
+# Define Files / Folders #                                                                                              #
+#########################################################################################################################
+
+##### Define AdvPreLoader File #####
+AdvPreLoader_Dir="$(pwd)"
+AdvPreLoader_File="AdvPreLoader.sh"
+
+##### Define Config File / Function Library Location #####
 ConfigDir="./config"
 FunctionsDir="./functions"
 
 ConfigFile="TCS_InstallTool.conf"
 FunctionsFile="TCS_InstallTool.bfunc"
+
+############################################################################################################################
+# Sanity Checks #                                                                                                          #
+############################################################################################################################
+
+# Sanity Check: AdvPreLoader File Exists?
+if [ -f "$AdvPreLoader_Dir"/"$AdvPreLoader_File" ]; then
+  echo "Sourcing Functions File..."
+  source "$AdvPreLoader_Dir"/"$AdvPreLoader_File"
+else
+  echo "ERROR! AdvPreLoader File Not Found.  Quitting..."
+  return
+fi
+
 
 # Sanity Check: Config File Exists?
 if [ -f "$ConfigDir"/"$ConfigFile" ]; then
@@ -26,7 +48,10 @@ else
   return
 fi
 
-  
+#################################################################################################
+# Main Program #                                                                                #
+#################################################################################################
+
 ## Run Main ##
  DisplayBanner
  ManualDownloader
