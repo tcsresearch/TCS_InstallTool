@@ -1,3 +1,12 @@
 # PS1ConfigTool #
-  PS1ConfigTool_install_URL="https://github.com/tcsresearch/PS1ConfigTool/archive/refs/heads/main.zip"
-  PS1ConfigTool_install_Dir="/etc/PS1ConfigTool"
+ProfileName="PS1ConfigTool"
+
+# Download URL #
+  PS1ConfigTool_Download_URL="https://github.com/tcsresearch/PS1ConfigTool/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  PS1ConfigTool_install_Dir_Root="/etc/PS1ConfigTool"
+  PS1ConfigTool_Install_Dir_NonRoot="~/PS1ConfigTool"
+
+# Dynamic Installer #
+  PS1ConfigTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
