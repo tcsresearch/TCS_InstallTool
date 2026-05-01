@@ -1,4 +1,17 @@
-function CheckRoot() {
+function CheckRoot_UID() {
+  # Check if the User ID (UID) is not 0 (root)
+  if [ "$UID" -ne 0 ]; then
+    echo "Not running as root. Extracting to alternate folder..."
+    # Use -C to specify the destination directory
+    tar -xf archive.tar.gz -C /home/$USER/alternate_folder
+  else
+    echo "Running as root. Extracting to system folder..."
+    tar -xf archive.tar.gz -C /opt/system_folder
+fi
+}
+
+
+function CheckRoot_EUID() {
   # Check if the Effective User ID (EUID) is not 0 (root)
   if [ "$EUID" -ne 0 ]; then
     echo "Not running as root. Extracting to alternate folder..."
