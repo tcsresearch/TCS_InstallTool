@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# ShellCheck: Disable SC1090
+# shellcheck source=/dev/null
+# shellcheck disable=SC2034  # Unused variables left for readability
 
 # BLING PreLoader Utility
 #
