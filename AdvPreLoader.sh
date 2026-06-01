@@ -27,7 +27,7 @@ COLORS_FILE="Colors.conf"
 
 # Source our Color Config
 if [ -f "$CONFIG_DIR"/"$COLORS_FILE" ]; then
-		# shellcheck source=Colors.conf
+		# shellcheck source=/dev/null
         source "$CONFIG_DIR"/"$COLORS_FILE"
 fi
 
