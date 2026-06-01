@@ -49,7 +49,7 @@ function run_gitleaks(){
 }
 
 # get folders in current directory
-folders=($(ls))
+folders=("$(ls)")
 
 # number of folders in current directory
 len=${#folders[*]}
@@ -89,7 +89,8 @@ while [ $i -lt "$len" ]; do
 				printf "\n----------------------------------------------------------------\n\n"
 			fi
 
-		elif [[ "$BRANCH" != "master" ]] || [[ "$BRANCH" != "main" ]] || [[ "$BRANCH" != "develop" ]]; then
+###		elif [[ "$BRANCH" != "master" ]] || [[ "$BRANCH" != "main" ]] || [[ "$BRANCH" != "develop" ]]; then
+		elif [[ "$BRANCH" != "master" ]] && [[ "$BRANCH" != "main" ]] && [[ "$BRANCH" != "develop" ]]; then
 				echo -e "${LightPurple}Branch not master/main/develop, current branch is: ${White} ${BRANCH} ${NC}" 
 			printf "\n----------------------------------------------------------------\n\n"
 		fi
@@ -104,7 +105,8 @@ while [ $i -lt "$len" ]; do
 		echo " "
 	fi
 
-	let i++
+	### let i++
+	(( i++ )) || true
 done
 		printf "\n----------------------------------------------------------------\n"
 [ ! $GITLEAKS_INSTALLED ]  && echo -e "update-all-repos now includes a secret scanning extension with gitleaks"
