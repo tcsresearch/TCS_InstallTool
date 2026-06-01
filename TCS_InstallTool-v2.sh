@@ -210,7 +210,8 @@ function ManualDownloader() {
 
 function DynamicExtrator() {
 	echo "Extracting & Installing $ProjectName..."
-	"$extractor_app $extractor_args" $ProjectName.zip -d "$InstallFolder" 
+###	"$extractor_app $extractor_args" $ProjectName.zip -d "$InstallFolder" 
+	"$extractor_app $extractor_args" "$ProjectName".zip -d "$InstallFolder"
 }
 
 
