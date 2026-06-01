@@ -15,3 +15,9 @@ Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux
     <li>Extracting of files (with a few caveats regarding full path results (see issues)</li>
   </ul>
 </p>
+<hr>
+<p>
+  :white_check_mark: This code was verified as ShellCheck compliant as of 05/31/2026. <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Code added after this date may or may not remain in compliance.
+</p>
+<hr>
