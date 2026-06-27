@@ -2,6 +2,13 @@
 Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux-configs
 
 <p>
+  <h4>Update 06/26/2026 - NEEDS TESTING!  Not Production Ready! </h4>
+  <ul>
+    <li>Added programs and optimized categories</li>
+  </ul>
+</p>
+
+<p>
   <h4>Update 04/30/2026 - NEEDS TESTING!  Not Production Ready! </h4>
   <ul>
     <li>Enabled Split Config w/ AdvPreLoader & Profiles</li>
