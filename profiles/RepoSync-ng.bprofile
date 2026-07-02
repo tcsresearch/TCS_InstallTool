@@ -9,4 +9,4 @@
   RepoSync-ng_install_Dir_NonRoot="~/TCS_IT/RepoSync-ng"
 
 # Dynamic Installer #
-  BLING_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  RepoSync-ng_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
