@@ -1,0 +1,12 @@
+# CronicleInstallTool #
+  ProfileName="CronicleInstallTool"
+
+# Download URL #
+  CronicleInstallTool_Download_URL="https://github.com/tcsresearch/CronicleInstallTool/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  CronicleInstallTool_install_Dir_Root="etc/CronicleInstallTool"
+  CronicleInstallTool_install_Dir_NonRoot="~/TCS_IT/CronicleInstallTool"
+
+# Dynamic Installer #
+  CronicleInstallTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
