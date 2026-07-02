@@ -1,0 +1,12 @@
+# GitChecker #
+  ProfileName="GitChecker"
+
+# Download URL #
+  BLING_Download_URL="https://github.com/tcsresearch/GitChecker/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  BLING_install_Dir_Root="etc/GitChecker"
+  BLING_install_Dir_NonRoot="~/TCS_IT/GitChecker"
+
+# Dynamic Installer #
+  BLING_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
