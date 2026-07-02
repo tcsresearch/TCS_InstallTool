@@ -1,0 +1,12 @@
+# SEOPanel-UpgradeTool #
+  ProfileName="SEOPanel-UpgradeTool"
+
+# Download URL #
+  SEOPanel-UpgradeTool_Download_URL="https://github.com/tcsresearch/SEOPanel-UpgradeTool/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  SEOPanel-UpgradeTool_install_Dir_Root="etc/SEOPanel-UpgradeTool"
+  SEOPanel-UpgradeTool_install_Dir_NonRoot="~/TCS_IT/SEOPanel-UpgradeTool"
+
+# Dynamic Installer #
+  SEOPanel-UpgradeTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
