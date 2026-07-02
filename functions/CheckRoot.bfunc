@@ -10,10 +10,10 @@ function CheckRoot_UID() {
   if [ "$UID" -ne 0 ]; then
     echo "Not running as root. Extracting to alternate folder..."
     # Use -C to specify the destination directory
-    tar -xf archive.tar.gz -C /home/$USER/alternate_folder
+    tar -xf archive.tar.gz -C $InstallDir_Base_Root
   else
     echo "Running as root. Extracting to system folder..."
-    tar -xf archive.tar.gz -C /opt/system_folder
+    tar -xf archive.tar.gz -C $InstallDir_Base_NonRoot
 fi
 }
 
@@ -23,9 +23,9 @@ function CheckRoot_EUID() {
   if [ "$EUID" -ne 0 ]; then
     echo "Not running as root. Extracting to alternate folder..."
     # Use -C to specify the destination directory
-    tar -xf archive.tar.gz -C /home/$USER/alternate_folder
+    tar -xf archive.tar.gz -C $InstallDir_Base_Root
   else
     echo "Running as root. Extracting to system folder..."
-    tar -xf archive.tar.gz -C /opt/system_folder
+    tar -xf archive.tar.gz -C $InstallDir_Base_NonRoot
 fi
 }
