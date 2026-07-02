@@ -1,0 +1,12 @@
+# KMirrorTool #
+  ProfileName="KMirrorTool"
+
+# Download URL #
+  KMirrorTool_Download_URL="https://github.com/tcsresearch/KMirrorTool/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  KMirrorTool_install_Dir_Root="etc/KMirrorTool"
+  KMirrorTool_install_Dir_NonRoot="~/TCS_IT/KMirrorTool"
+
+# Dynamic Installer #
+  KMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
