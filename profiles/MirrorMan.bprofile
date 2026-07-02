@@ -1,0 +1,12 @@
+# MirrorMan #
+  ProfileName="MirrorMan"
+
+# Download URL #
+  MirrorMan_Download_URL="https://github.com/tcsresearch/MirrorMan/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  MirrorMan_install_Dir_Root="etc/MirrorMan"
+  MirrorMan_install_Dir_NonRoot="~/TCS_IT/MirrorMan"
+
+# Dynamic Installer #
+  MirrorMan_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
