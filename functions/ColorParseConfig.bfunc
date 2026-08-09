@@ -1,0 +1,18 @@
+show_config() {
+    local file="${1:-.config}"
+    local cyan='\033[1;36m'
+    local green='\033[1;32m'
+    local reset='\033[0m'
+
+    [[ -f "$file" ]] || { echo "File not found: $file"; return 1; }
+
+    while IFS='=' read -r key val; do
+        # Skip empty lines and comments
+        [[ -z "$key" || "$key" =~ ^# ]] && continue
+        # Strip leading/trailing whitespace or quotes
+        key=$(echo "$key" | xargs)
+        val=$(echo "$val" | xargs | tr -d '"'"'")
+
+        printf "${cyan}%s${reset} = ${green}%s${reset}\n" "$key" "$val"
+    done < "$file"
+}
