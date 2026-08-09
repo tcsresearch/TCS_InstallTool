@@ -1,0 +1,38 @@
+function parse_config2() {
+    # Check if a file path was provided
+    if [[ -z "$1" ]]; then
+        echo "Error: No configuration file specified." >&2
+        return 1
+    fi
+
+    # Check if the file actually exists
+    if [[ ! -f "$1" ]]; then
+        echo "Error: File '$1' not found." >&2
+        return 1
+    fi
+
+    # Read the file line by line
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        # 1. Strip leading and trailing whitespace
+        line=$(echo "$line" | xargs)
+
+        # 2. Skip empty lines and comments
+        [[ -z "$line" || "$line" == \#* ]] && continue
+
+        # 3. Ensure the line contains an assignment operator (=)
+        if [[ "$line" == *=* ]]; then
+            # Extract key (everything before the first =)
+            local key="${line%%=*}"
+            # Extract value (everything after the first =)
+            local value="${line#*=}"
+
+            # Trim whitespace from key and value
+            key=$(echo "$key" | xargs)
+            value=$(echo "$value" | xargs)
+
+            # Display the result
+            echo "Key: $key | Value: $value"
+        fi
+    done < "$1"
+}
+
