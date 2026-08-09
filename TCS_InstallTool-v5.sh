@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # ShellCheck: Disable SC1090
 # shellcheck source=/dev/null
-# shellcheck disable=SC2034  # Unused variables left for readability
+# shellcheck disable=SC2034, 2154  # Unused variables left for readability
 
 # TODO: Add Sourcing and Sanity Checks.
+# TODO: Create folders if they do not exist.
 
 #########################################################################################################################
 # Define Files / Folders #                                                                                              #
