@@ -9,4 +9,4 @@
   AOSPMirrorTool_install_Dir_NonRoot="~/TCS_IT/AOSPMirrorTool"
 
 # Dynamic Installer #
-  AOSPMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  AOSPMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
