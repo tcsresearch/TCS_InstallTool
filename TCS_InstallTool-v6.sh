@@ -4,7 +4,9 @@
 # shellcheck disable=SC2034  # Unused variables left for readability
 
 # TODO: Add Sourcing and Sanity Checks.
-
+# FIXME: Need to have AdvPreLoader mkdir for folders that do not exist yet.
+# TODO: Have wget use -i to read input from a file, or multiple files as .bprofile files.
+#
 #########################################################################################################################
 # Define Files / Folders #                                                                                              #
 #########################################################################################################################
