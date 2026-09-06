@@ -9,4 +9,4 @@
   CronicleInstallTool_install_Dir_NonRoot="~/TCS_IT/CronicleInstallTool"
 
 # Dynamic Installer #
-  CronicleInstallTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  CronicleInstallTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
