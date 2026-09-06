@@ -1,0 +1,44 @@
+#!/bin/env bash
+
+COLOR_BLACK=0
+COLOR_RED=1
+COLOR_GREEN=2
+COLOR_YELLOW=3
+COLOR_BLUE=4
+COLOR_MAGENTA=5
+COLOR_CYAN=6
+COLOR_WHITE=7
+COLOR_OFF=9
+FG_BLACK=$(echo -e "\033[3${COLOR_BLACK}m")
+FG_RED=$(echo -e "\033[3${COLOR_RED}m")
+FG_GREEN=$(echo -e "\033[3${COLOR_GREEN}m")
+FG_YELLOW=$(echo -e "\033[3${COLOR_YELLOW}m")
+FG_BLUE=$(echo -e "\033[3${COLOR_BLUE}m")
+FG_MAGENTA=$(echo -e "\033[3${COLOR_MAGENTA}m")
+FG_CYAN=$(echo -e "\033[3${COLOR_CYAN}m")
+FG_WHITE=$(echo -e "\033[3${COLOR_WHITE}m")
+FG_OFF=$(echo -e "\033[3${COLOR_OFF}m")
+BG_BLACK=$(echo -e "\033[4${COLOR_BLACK}m")
+BG_RED=$(echo -e "\033[4${COLOR_RED}m")
+BG_GREEN=$(echo -e "\033[4${COLOR_GREEN}m")
+BG_YELLOW=$(echo -e "\033[4${COLOR_YELLOW}m")
+BG_BLUE=$(echo -e "\033[4${COLOR_BLUE}m")
+BG_MAGENTA=$(echo -e "\033[4${COLOR_MAGENTA}m")
+BG_CYAN=$(echo -e "\033[4${COLOR_CYAN}m")
+BG_WHITE=$(echo -e "\033[4${COLOR_WHITE}m")
+BG_OFF=$(echo -e "\033[4${COLOR_OFF}m")
+FG_INFO=$(echo -e "${FG_CYAN}")
+FG_DANGER=$(echo -e "${FG_RED}")
+FG_WARNING=$(echo -e "${FG_YELLOW}")
+FG_SUCCESS=$(echo -e "${FG_GREEN}")
+BG_INFO=$(echo -e "${BG_CYAN}")
+BG_DANGER=$(echo -e "${BG_RED}")
+BG_WARNING=$(echo -e "${BG_YELLOW}")
+BG_SUCCESS=$(echo -e "${BG_GREEN}")
+
+# Disable word wrapping
+echo -e "\033[?7l"
+
+# Hide cursor
+echo -e "\033[?25l"
+
