@@ -9,4 +9,4 @@
   KMirrorTool_install_Dir_NonRoot="~/TCS_IT/KMirrorTool"
 
 # Dynamic Installer #
-  KMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  KMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
