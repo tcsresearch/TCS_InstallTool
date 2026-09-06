@@ -9,4 +9,4 @@
   MirrorMan_install_Dir_NonRoot="~/TCS_IT/MirrorMan"
 
 # Dynamic Installer #
-  MirrorMan_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  MirrorMan_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
