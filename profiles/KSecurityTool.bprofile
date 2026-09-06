@@ -9,4 +9,4 @@
   KSecurityTool_install_Dir_NonRoot="~/TCS_IT/KSecurityTool"
 
 # Dynamic Installer #
-  KSecurityTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  KSecurityTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
