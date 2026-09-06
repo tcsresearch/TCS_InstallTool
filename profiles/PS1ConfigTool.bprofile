@@ -1,5 +1,5 @@
 # PS1ConfigTool #
-ProfileName="PS1ConfigTool"
+  ProfileName="PS1ConfigTool"
 
 # Download URL #
   PS1ConfigTool_Download_URL="https://github.com/tcsresearch/PS1ConfigTool/archive/refs/heads/main.zip"
