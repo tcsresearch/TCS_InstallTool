@@ -5,7 +5,7 @@
   GitChecker_Download_URL="https://github.com/tcsresearch/GitChecker/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  GitChecker_install_Dir_Root="etc/GitChecker"
+  GitChecker_install_Dir_Root="/etc/GitChecker"
   GitChecker_install_Dir_NonRoot="~/TCS_IT/GitChecker"
 
 # Dynamic Installer #
