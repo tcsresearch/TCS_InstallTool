@@ -5,7 +5,7 @@
   AOSPMirrorTool_Download_URL="https://github.com/tcsresearch/AOSPMirrorTool/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  AOSPMirrorTool_install_Dir_Root="etc/AOSPMirrorTool"
+  AOSPMirrorTool_install_Dir_Root="/etc/AOSPMirrorTool"
   AOSPMirrorTool_install_Dir_NonRoot="~/TCS_IT/AOSPMirrorTool"
 
 # Dynamic Installer #
