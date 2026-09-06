@@ -5,8 +5,8 @@
   ServiceWrapperTool_Download_URL="https://github.com/tcsresearch/ServiceWrapperTool/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  ServiceWrapperTool_install_Dir_Root="etc/ServiceWrapperTool"
+  ServiceWrapperTool_install_Dir_Root="/etc/ServiceWrapperTool"
   ServiceWrapperTool_install_Dir_NonRoot="~/TCS_IT/ServiceWrapperTool"
 
 # Dynamic Installer #
-  ServiceWrapperTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  ServiceWrapperTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
