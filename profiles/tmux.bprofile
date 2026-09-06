@@ -1,5 +1,5 @@
 # tmux #
-ProfileName="tmux"
+  ProfileName="tmux"
 
 # Download URL #
   tmux_Download_URL="https://github.com/tcsresearch/tmux-configs/archive/refs/heads/main.zip"
@@ -19,5 +19,5 @@ ProfileName="tmux-custom-plugins"
   
 # Install Dirs #
   tmux-custom-plugins_install_Dir_Root="/etc/tmux/tpm"
-  tmux-custom-plugins_install_Dir_NonRoot="~/.tmux/tpm # Should we use '$(pwd)/.tmux/tpm' ?
+  tmux-custom-plugins_install_Dir_NonRoot="~/.tmux/tpm" # Should we use '$(pwd)/.tmux/tpm' ?
   tmux-custom-plugins-install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
