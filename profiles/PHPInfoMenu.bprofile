@@ -9,4 +9,4 @@
   PHPInfoMenu_install_Dir_NonRoot="~/TCS_IT/PHPInfoMenu"
 
 # Dynamic Installer #
-  PHPInfoMenu_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  PHPInfoMenu_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
