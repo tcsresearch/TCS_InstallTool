@@ -5,7 +5,7 @@
   BootConfigTool_Download_URL="https://github.com/tcsresearch/BootConfigTool/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  BootConfigTool_install_Dir_Root="etc/BootConfigTool"
+  BootConfigTool_install_Dir_Root="/etc/BootConfigTool"
   BootConfigTool_install_Dir_NonRoot="~/TCS_IT/BootConfigTool"
 
 # Dynamic Installer #
