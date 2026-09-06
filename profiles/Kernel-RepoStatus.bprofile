@@ -5,7 +5,7 @@
   Kernel-RepoStatus_Download_URL="https://github.com/tcsresearch/Kernel-RepoStatus/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  Kernel-RepoStatus_install_Dir_Root="etc/Kernel-RepoStatus"
+  Kernel-RepoStatus_install_Dir_Root="/etc/Kernel-RepoStatus"
   Kernel-RepoStatus_install_Dir_NonRoot="~/TCS_IT/Kernel-RepoStatus"
 
 # Dynamic Installer #
