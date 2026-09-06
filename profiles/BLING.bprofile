@@ -9,4 +9,4 @@
   BLING_install_Dir_NonRoot="~/TCS_IT/BLING"
 
 # Dynamic Installer #
-  BLING_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  BLING_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
