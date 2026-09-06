@@ -2,6 +2,14 @@
 Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux-configs
 
 <p>
+  <h4>Update 09/05/2026 - NEEDS TESTING!  Not Production Ready! </h4>
+  <ul>
+    <li>Fixed files in profiles/ folder.</li>
+    <li>Added Menu Example scripts.</li>
+  </ul>
+</p>
+
+<p>
   <h4>Update 07/02/2026 - NEEDS TESTING!  Not Production Ready! </h4>
   <ul>
     <li>Added many programs to profiles folder</li>
