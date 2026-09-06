@@ -5,8 +5,8 @@
   RepoSync-ng_Download_URL="https://github.com/tcsresearch/RepoSync-ng/archive/refs/heads/main.zip"
 
 # Install Dirs #
-  RepoSync-ng_install_Dir_Root="etc/RepoSync-ng"
+  RepoSync-ng_install_Dir_Root="/etc/RepoSync-ng"
   RepoSync-ng_install_Dir_NonRoot="~/TCS_IT/RepoSync-ng"
 
 # Dynamic Installer #
-  RepoSync-ng_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  RepoSync-ng_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
