@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/env bash
+
+# ShellCheck
+# shellcheck disable=SC2034,SC2155  # Unused variables left for readability / Declare and assign separately to avoid masking return values.
 
 COLOR_BLACK=0
 COLOR_RED=1
@@ -132,7 +135,7 @@ while true; do
                 exit 0
                 ;;
         esac
-        read -p "Press any key to continue..." -n1
+        read -rp "Press any key to continue..." -n1
     fi
 
 done
