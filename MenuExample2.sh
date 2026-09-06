@@ -1,5 +1,8 @@
-#!/bin/bash
+#!/bin/env bash
 
+
+# ShellCheck
+# shellcheck disable=SC2034,SC2155  # Unused variables left for readability / Declare and assign separately to avoid masking return values.
 COLOR_BLACK=0
 COLOR_RED=1
 COLOR_GREEN=2
