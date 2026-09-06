@@ -9,4 +9,4 @@
   GitChecker_install_Dir_NonRoot="~/TCS_IT/GitChecker"
 
 # Dynamic Installer #
-  GitChecker_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  GitChecker_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
