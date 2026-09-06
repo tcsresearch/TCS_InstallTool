@@ -9,4 +9,4 @@
   BootConfigTool_install_Dir_NonRoot="~/TCS_IT/BootConfigTool"
 
 # Dynamic Installer #
-  BootConfigTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName
+  BootConfigTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
