@@ -132,7 +132,7 @@ while true; do
                 exit 0
                 ;;
         esac
-        read -p "Press any key to continue..." -n1
+        read -rp "Press any key to continue..." -n1
     fi
 
 done
