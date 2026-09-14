@@ -23,7 +23,7 @@ FUNC_DIR="$(pwd)/functions"
 # FUNC_FILE="lib_ini.bfunc"
 
 # Colors for Cecho-like output
-COLORS_FILE="Colors.conf"
+COLORS_FILE="Colors2.conf"
 
 # Source our Color Config
 if [ -f "$CONFIG_DIR"/"$COLORS_FILE" ]; then
