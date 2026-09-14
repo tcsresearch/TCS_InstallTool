@@ -3,7 +3,7 @@
 # shellcheck source=/dev/null
 # shellcheck disable=SC2034  # Unused variables left for readability
 
-# TODO: Add Sourcing and Sanity Checks.
+# TESTING: Add Sourcing and Sanity Checks.
 # FIXME: Need to have AdvPreLoader mkdir for folders that do not exist yet.
 # TODO: Have wget use -i to read input from a file, or multiple files as .bprofile files.
 #
@@ -11,16 +11,16 @@
 # Define Files / Folders #                                                                                              #
 #########################################################################################################################
 
-##### Define AdvPreLoader File #####
+##### Define AdvPreLoader File / Location #####
 AdvPreLoader_Dir="$(pwd)"
 AdvPreLoader_File="AdvPreLoader.sh"
 
-##### Define Config File Location #####
+##### Define Config File / Location #####
 ConfigDir="./config"
 ConfigFile="TCS_InstallTool.conf"
 
 
-##### Define Function Library Location #####
+##### Define Function Library File / Location #####
 FunctionsDir="./functions"
 FunctionsFile="TCS_InstallTool.bfunc"
 
