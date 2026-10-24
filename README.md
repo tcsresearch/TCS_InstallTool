@@ -2,6 +2,17 @@
 Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux-configs
 
 <p>
+  <h4>Update 10/24/2026 - NEEDS TESTING!  Not Production Ready! </h4>
+  <ul>
+    <li>Added SmartCompress to profiles folder. </li>
+    <li>Added FLIPTool-2026 to profiles folder. </li>
+    <li>Added SimonSed to profiles folder. </li>
+    <li>Added KFastHeaders-BuildTool to profiles folder. </li>
+    <li>Added ViewINI to profiles folder. </li>
+  </ul>
+</p>
+
+<p>
   <h4>Update 09/05/2026 - NEEDS TESTING!  Not Production Ready! </h4>
   <ul>
     <li>Fixed files in profiles/ folder.</li>
