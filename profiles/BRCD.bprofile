@@ -2,7 +2,7 @@
   ProfileName="BRCD"
 
 # Download URL #
-  BRCD_install_URL="https://github.com/tcsresearch/BRCD/archive/refs/heads/main.zip"
+  BRCD_install_URL="https://github.com/tcsresearch/bashrc.d/archive/refs/heads/main.zip"
 
 # Installer Dirs #
   BRCD_install_Dir_Root="/etc/bashrc.d"
