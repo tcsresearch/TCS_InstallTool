@@ -77,7 +77,7 @@ $(ColorGreen '4)') Kernel version
 $(ColorGreen '5)') Check All
 $(ColorGreen '0)') Exit
 $(ColorBlue 'Choose an option:') "
-        read a
+        read -r a
         case $a in
 	        1) memory_check ; menu ;;
 	        2) cpu_check ; menu ;;
