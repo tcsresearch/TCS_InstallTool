@@ -1,0 +1,12 @@
+# FLIPTool-2026 #
+  ProfileName="FLIPTool-2026"
+
+# Download URL #
+  FLIPTool-2026_Download_URL="https://github.com/tcsresearch/FLIPTool-2026/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  FLIPTool-2026_install_Dir_Root="/etc/FLIPTool-2026"
+  FLIPTool-2026_install_Dir_NonRoot="~/TCS_IT/FLIPTool-2026"
+
+# Dynamic Installer #
+  AOSPMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
