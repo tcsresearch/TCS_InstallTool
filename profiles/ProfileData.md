@@ -1,6 +1,7 @@
-################################################################################################################
+################################
 # Define Variables - Full URLs #
 ################################
+
 # SelfUpdate #
   SelfUpdate_URL="https://raw.githubusercontent.com/tcsresearch/TCS_InstallTool/refs/heads/main/TCS_InstallTool-v2.sh"
 
@@ -22,18 +23,20 @@
 # ColorEcho #
   ColorEcho_install_URL="https://github.com/tcsresearch/ColorEcho/archive/refs/heads/main.zip"
 
-##################################################################################################################
+###############################
 # Define Variables - Advanced #
 ###############################
+
 BaseURL="https://github.com/tcsresearch"
 
 ExtURL="archive/refs/heads"
 
 FileName="main.zip"
 
-##################################################################################################################
+######################################
 # Define Variables - Install Folders #
 ######################################
+
 # SelfUpdate #
 	TCS_InstallTool_install_Dir="$(pwd)"
 
@@ -61,4 +64,3 @@ FileName="main.zip"
 
 	AOSPMirrorTool_install_Dir="/etc/AOSPMirrorTool"
 
-  ##################################################################################################################
