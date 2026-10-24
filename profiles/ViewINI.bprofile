@@ -1,0 +1,12 @@
+# ViewINI #
+  ProfileName="ViewINI"
+
+# Download URL #
+  ViewINI_Download_URL="https://github.com/tcsresearch/ViewINI/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  ViewINI_install_Dir_Root="/etc/ViewINI"
+  ViewINI_install_Dir_NonRoot="~/TCS_IT/ViewINI"
+
+# Dynamic Installer #
+  ViewINI_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
