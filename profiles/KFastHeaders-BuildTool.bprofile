@@ -1,0 +1,12 @@
+# KFastHeaders-BuildTool #
+  ProfileName="KFastHeaders-BuildTool"
+
+# Download URL #
+  KFastHeaders-BuildTool_Download_URL="https://github.com/tcsresearch/KFastHeaders-BuildTool/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  KFastHeaders-BuildTool_install_Dir_Root="/etc/KFastHeaders-BuildTool"
+  KFastHeaders-BuildTool_install_Dir_NonRoot="~/TCS_IT/KFastHeaders-BuildTool"
+
+# Dynamic Installer #
+  AOSPMirrorTool_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
