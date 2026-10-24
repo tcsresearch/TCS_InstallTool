@@ -1,0 +1,12 @@
+# SimonSed #
+  ProfileName="SimonSed"
+
+# Download URL #
+  SimonSed_Download_URL="https://github.com/tcsresearch/SimonSed/archive/refs/heads/main.zip"
+
+# Install Dirs #
+  SimonSed_install_Dir_Root="/etc/SimonSed"
+  SimonSed_install_Dir_NonRoot="~/TCS_IT/SimonSed"
+
+# Dynamic Installer #
+  SimonSed_install_Dir_Selected="$InstallDir_Base_Selected/$ProfileName"
