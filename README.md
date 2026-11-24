@@ -2,6 +2,17 @@
 Provides an easy installer for projects such as ColorEcho, BLING, BRCD, and tmux-configs
 
 <p>
+  
+### Project Status
+<!-- SHELLCHECK_COMPLIANCE_START -->
+**Shellcheck Date Of Compliance:** 2026-11-24
+<!-- SHELLCHECK_COMPLIANCE_END -->
+
+</p>
+
+<hr>
+
+<p>
   <h4>Update 10/24/2026 - NEEDS TESTING!  Not Production Ready! </h4>
   <ul>
     <li>Added SmartCompress to profiles folder. </li>
